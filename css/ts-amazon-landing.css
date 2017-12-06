@@ -10,7 +10,7 @@ h1 {
   margin-bottom: 10px;
   color: #d3aa72;
   font-size: 35.2px;
-  line-height: 35.2px;
+  line-height: 40.2px;
   font-weight: 400;
   text-align: center;
   text-transform: uppercase;
@@ -76,9 +76,12 @@ a {
 
 .zoom-wrapper {
   overflow: hidden;
-  width: 600px;
-  height: 600px;
+  width: 100%;
   border: 10px solid #d3aa72;
+}
+
+.zoom-wrapper.without-border {
+  border-width: 0px;
 }
 
 .zoom {
@@ -236,6 +239,7 @@ a {
 .specs-image {
   width: 50%;
   float: left;
+  cursor: -webkit-zoom-in;
 }
 
 .specs-wrapper {
@@ -443,6 +447,45 @@ a {
 
 .text-field {
   width: 98%;
+}
+
+.coupon-redeem-wrapper {
+  padding: 65px;
+  border: 10px solid #d3aa72;
+  text-align: center;
+}
+
+.coupon-display {
+  position: relative;
+  display: inline-block;
+  margin-top: 25px;
+  margin-right: 20px;
+  margin-bottom: 25px;
+  padding: 30px 85px;
+  border: 5px dashed #d3aa72;
+  background-color: #f3f3f3;
+  font-size: 19px;
+  line-height: 40px;
+}
+
+.text-block {
+  font-size: 23px;
+  line-height: 48px;
+}
+
+.copy-coupon-btn {
+  position: static;
+  right: 0px;
+  bottom: 0px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border: 1px dashed #d3aa72;
+  background-color: #fff;
+  color: #1c1c1c;
+  font-size: 12px;
+  line-height: 27px;
+  text-transform: uppercase;
+  cursor: pointer;
 }
 
 html.w-mod-js *[data-ix="new-interaction"] {
