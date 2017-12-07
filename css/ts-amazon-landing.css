@@ -190,19 +190,19 @@ a {
   color: #fff;
 }
 
-.top-bar {
+.bottom-bar {
   position: fixed;
   left: 0px;
-  top: 0px;
   right: 0px;
+  bottom: 0px;
   z-index: 100;
   width: 100%;
   padding: 10px;
   background-color: #1c1c1c;
   box-shadow: 0 10px 25px 0 hsla(0, 0%, 51%, .37);
-  -webkit-transform: translate(0px, -150px);
-  -ms-transform: translate(0px, -150px);
-  transform: translate(0px, -150px);
+  -webkit-transform: translate(0px, 150px);
+  -ms-transform: translate(0px, 150px);
+  transform: translate(0px, 150px);
   text-align: center;
 }
 
@@ -450,6 +450,7 @@ a {
 }
 
 .coupon-redeem-wrapper {
+  margin-top: -20px;
   padding: 65px;
   border: 10px solid #d3aa72;
   text-align: center;
@@ -468,7 +469,7 @@ a {
   line-height: 40px;
 }
 
-.text-block {
+.coupon-text {
   font-size: 23px;
   line-height: 48px;
 }
@@ -488,7 +489,25 @@ a {
   cursor: pointer;
 }
 
-html.w-mod-js *[data-ix="new-interaction"] {
+.body-with-bottom-bar {
+  padding-bottom: 100px;
+}
+
+.amz-cta {
+  width: 50%;
+  margin-top: 50px;
+  padding: 24px 45px;
+  background-color: #d3aa72;
+  -webkit-transition: background-color 350ms ease;
+  transition: background-color 350ms ease;
+  font-size: 20px;
+}
+
+.amz-cta:hover {
+  background-color: #1c1c1c;
+}
+
+html.w-mod-js *[data-ix="show-hide-accordion-answer"] {
   height: 75px;
 }
 
@@ -562,6 +581,10 @@ html.w-mod-js *[data-ix="new-interaction"] {
     width: 75%;
     margin-top: 30px;
   }
+  .coupon-redeem-wrapper {
+    padding: 25px;
+    border-width: 5px;
+  }
 }
 
 @media (max-width: 767px) {
@@ -596,9 +619,16 @@ html.w-mod-js *[data-ix="new-interaction"] {
   .faq-wrapper {
     margin-top: 65px;
   }
+  .amz-cta {
+    width: 75%;
+  }
 }
 
 @media (max-width: 479px) {
+  h1 {
+    font-size: 26.2px;
+    line-height: 33.2px;
+  }
   .logo {
     margin-bottom: 0px;
   }
@@ -689,6 +719,20 @@ html.w-mod-js *[data-ix="new-interaction"] {
   }
   .form-field-50 {
     width: 100%;
+  }
+  .coupon-display {
+    width: 100%;
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+  .coupon-text {
+    font-size: 20px;
+    line-height: 38px;
+  }
+  .amz-cta {
+    width: 100%;
+    font-size: 15px;
+    line-height: 26px;
   }
 }
 

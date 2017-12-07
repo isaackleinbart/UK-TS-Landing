@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <!--  Last Published: Thu Dec 07 2017 01:03:41 GMT+0000 (UTC)  -->
-<html data-wf-page="5a2845cebe5d2300015bc38d" data-wf-site="5a25cc5df5ac51000103d476">
+<html data-wf-page="5a288cffc6d9f200017b1b1f" data-wf-site="5a25cc5df5ac51000103d476">
 <head>
   <meta charset="utf-8">
-  <title>Huston Promotion</title>
-  <meta content="Huston Promotion" property="og:title">
+  <title>Promotion without Mautic</title>
+  <meta content="Promotion without Mautic" property="og:title">
   <meta content="width=device-width, initial-scale=1" name="viewport">
   <link href="css/normalize.css" rel="stylesheet" type="text/css">
   <link href="css/components.css" rel="stylesheet" type="text/css">
@@ -66,14 +66,23 @@
     <div class="modal-box">
       <div data-w-id="e50f99e0-e31b-33cd-3f87-a7c7c46f0f5e" class="close-modal-text">Close Modal</div>
       <div class="modal-heading">Claim your coupon</div>
-      <div class="form w-embed w-script">
-        <script type="text/javascript" src="https://dealco.mautic.net/form/generate.js?id=4"></script>
+      <div class="w-form">
+        <form id="email-form" name="email-form" data-name="Email Form" class="form">
+          <div class="form-field-50"><label for="First-Name">First Name:</label><input type="text" class="w-input" maxlength="256" name="First-Name" data-name="First Name" placeholder="Enter your first name" id="First-Name" required=""></div>
+          <div class="form-field-50"><label for="Last-Name">Last Name:</label><input type="text" class="w-input" maxlength="256" name="Last-Name" data-name="Last Name" placeholder="Enter your last name" id="Last-Name" required=""></div>
+          <div class="form-field-100"><label for="email">Email Address:</label><input type="text" class="text-field w-input" maxlength="256" name="email" data-name="Email" placeholder="Enter your email" id="email" required=""></div><input type="submit" value="Claim Now" data-wait="Please wait..." class="submit-btn w-button"></form>
+        <div class="w-form-done">
+          <div>Thank you! Your submission has been received!</div>
+        </div>
+        <div class="w-form-fail">
+          <div>Oops! Something went wrong while submitting the form.</div>
+        </div>
       </div>
     </div>
     <div data-w-id="9d7bf01e-b00c-5e1b-4cc3-f2e7c85d31c8" class="click-to-close"></div>
   </div>
   <div class="logo w-embed"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 1000 400"><path d="M66 280.8H35v-5.9h68.7v5.9h-31v79.9H66v-79.9zm47.3 79.9v-85.9h6.5v85.9h-6.5zm97.3-76.4l-32.9 50.3h-2.2l-33.1-50.3v76.3h-6.6v-85.9h7.9l32.9 50.1 32.5-50.1h8.1v85.9h-6.5v-76.3zm105.3 33.5c-.1 22.6-14.5 44.3-43.3 44.3-28.8 0-43.3-21.8-43.3-44.5 0-23.1 14.4-44.2 43.3-44.2 29 0 43.4 21.2 43.3 44.4zm-80.1-.1c.1 19.4 12.4 38.3 36.8 38.3 24.5 0 36.9-18.9 36.9-38.3 0-19.9-12.3-38.2-36.9-38.2-24.7 0-36.9 18-36.8 38.2zM348 280.8h-31v-5.9h68.7v5.9h-31v79.9H348v-79.9zm108.6 79.9v-39h-54.7v39h-6.6v-85.9h6.6v40.9h54.7v-40.9h6.6v85.9h-6.6zm48.6-34.4l-33.5-51.4v-.1h7.7l29.1 45.2 29.2-45.2h7.7v.1l-33.6 51.4v34.4h-6.6v-34.4zm129.6-35c-6.3-10.1-16.3-11.5-26-11.7-10.1 0-26 3.7-26 17.4 0 10.9 11.8 13.5 26.3 16.2 16.6 3.2 33.7 6.1 33.7 24.7-.1 19.4-19.6 24.1-34 24.1-13.4 0-28.6-5.5-35.2-18.7l5.9-2.9c5.3 10.4 18.8 15.6 29.3 15.6 10.6 0 27.4-2.9 27.4-18.2.1-12.9-14.1-15.7-28.2-18.4-15.7-3.1-31.8-6.3-31.8-22.1-.4-18.2 18.5-23.8 32.6-23.8 12.3 0 22.9 2 31.4 14.6l-5.4 3.2zm43.4-10.5h-31v-5.9h68.7v5.9h-31v79.9h-6.6v-79.9zm130.1 37c-.1 22.6-14.5 44.3-43.3 44.3-28.8 0-43.3-21.8-43.3-44.5 0-23.1 14.4-44.2 43.3-44.2s43.4 21.2 43.3 44.4zm-80.2-.1c.1 19.4 12.4 38.3 36.8 38.3 24.5 0 36.9-18.9 36.9-38.3 0-19.9-12.3-38.2-36.9-38.2-24.6 0-36.9 18-36.8 38.2zm95.8-42.9l57.8 71.1v-71.1h6.5v85.9h-2.6l-57.9-70.9v70.9H821v-85.9h2.9zm86.9 39.6h50.3v6h-50.3v33.9H965v6.4h-60.7v-85.9h59.3v6.3h-52.8v33.3z" fill="#58595B"></path><g fill="#D3AA72"><path d="M500 69l-38.8 38.7h16l17.1-17.1v80.5l5.7 5.6 5.7-5.6V90.6l17.1 17.1h16"></path><path d="M484.8 128.4v-11.2h-55.2L500 46.7l61 61h16l-77-77-92.1 92.1 5.6 5.6"></path><path d="M515.2 117.2v11.3h55.2L500 198.9l-61-61h-16.1L500 215l92.1-92.2-5.6-5.6"></path></g></svg></div>
-  <div data-w-id="5b91936c-9a11-99df-ac60-af02759a8570" style="-webkit-transform:translateX(0) translateY(150PX) translateZ(0) scaleX(1) scaleY(1) scaleZ(1) rotateX(0) rotateY(0) rotateZ(0) skewX(0) skewY(0);-moz-transform:translateX(0) translateY(150PX) translateZ(0) scaleX(1) scaleY(1) scaleZ(1) rotateX(0) rotateY(0) rotateZ(0) skewX(0) skewY(0);-ms-transform:translateX(0) translateY(150PX) translateZ(0) scaleX(1) scaleY(1) scaleZ(1) rotateX(0) rotateY(0) rotateZ(0) skewX(0) skewY(0);transform:translateX(0) translateY(150PX) translateZ(0) scaleX(1) scaleY(1) scaleZ(1) rotateX(0) rotateY(0) rotateZ(0) skewX(0) skewY(0)" class="bottom-bar">
+  <div data-w-id="5b91936c-9a11-99df-ac60-af02759a8570" class="bottom-bar">
     <div class="bar-text w-hidden-tiny">Limited time and quantity remaining!</div>
     <div data-w-id="8f427d15-a3f1-c624-23ef-999c4943774b" class="bar-coupon-btn">Claim your coupon</div>
   </div>
@@ -107,9 +116,9 @@
     </div>
     <div class="lifestyle-header">
       <h2 class="lifestyle-header-text w-hidden-small w-hidden-tiny">The Details</h2><img src="images/PICTURE--15-1.jpg" srcset="images/PICTURE--15-1-p-800.jpeg 800w, images/PICTURE--15-1-p-1080.jpeg 1080w, images/PICTURE--15-1-p-1600.jpeg 1600w, images/PICTURE--15-1-p-2000.jpeg 2000w, images/PICTURE--15-1-p-2600.jpeg 2600w, images/PICTURE--15-1-p-3200.jpeg 3200w, images/PICTURE--15-1.jpg 4000w" sizes="(max-width: 479px) 100vw, (max-width: 767px) 92vw, 93vw" class="lifestyle-image"></div>
-    <div class="specs-image w-hidden-small w-hidden-tiny">
+    <div class="specs-image">
       <div class="zoom-wrapper without-border">
-        <div class="zoom"><img src="images/H-011-ALRG_MAIN-1.jpg" srcset="images/H-011-ALRG_MAIN-1-p-500.jpeg 500w, images/H-011-ALRG_MAIN-1-p-800.jpeg 800w, images/H-011-ALRG_MAIN-1-p-1080.jpeg 1080w, images/H-011-ALRG_MAIN-1-p-1600.jpeg 1600w, images/H-011-ALRG_MAIN-1-p-2000.jpeg 2000w, images/H-011-ALRG_MAIN-1-p-2600.jpeg 2600w, images/H-011-ALRG_MAIN-1-p-3200.jpeg 3200w, images/H-011-ALRG_MAIN-1.jpg 3803w" sizes="(max-width: 479px) 100vw, (max-width: 767px) 363.6000061035156px, 47vw" data-w-id="9c3ee339-c09c-3da6-9b7e-61c3c11a84f7"></div>
+        <div class="zoom"><img src="images/H-011-ALRG_MAIN-1.jpg" srcset="images/H-011-ALRG_MAIN-1-p-500.jpeg 500w, images/H-011-ALRG_MAIN-1-p-800.jpeg 800w, images/H-011-ALRG_MAIN-1-p-1080.jpeg 1080w, images/H-011-ALRG_MAIN-1-p-1600.jpeg 1600w, images/H-011-ALRG_MAIN-1-p-2000.jpeg 2000w, images/H-011-ALRG_MAIN-1-p-2600.jpeg 2600w, images/H-011-ALRG_MAIN-1-p-3200.jpeg 3200w, images/H-011-ALRG_MAIN-1.jpg 3803w" sizes="(max-width: 767px) 92vw, 47vw" data-w-id="9c3ee339-c09c-3da6-9b7e-61c3c11a84f7"></div>
       </div>
     </div>
     <div data-duration-in="300" data-duration-out="100" class="tabs w-tabs">
